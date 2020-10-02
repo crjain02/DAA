@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 public class NQueenProblem 
 { 
@@ -55,8 +56,9 @@ public class NQueenProblem
 		printSolution(board); 
 		return true; 
 	} 
-	public static void main(String args[]) 
+	public static void main(String args[])throws IOException
 	{ 
+	//Backtracking
 	   	NQueenProblem Queen = new NQueenProblem(); 
 		Queen.solveNQ(); 
 	} 
